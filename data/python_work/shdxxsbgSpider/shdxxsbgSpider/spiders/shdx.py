@@ -13,6 +13,6 @@ class ShdxSpider(scrapy.Spider):
         item['name'] = response.xpath('//div[@class="list-con"]/ul/li/a/div[1]/text()').get()
         item['time'] = response.xpath('//div[@class="list-con"]/ul/li/a/div[2]/text()').get()
         print(name)
-        yield item
+        yield ite  m
 
 
