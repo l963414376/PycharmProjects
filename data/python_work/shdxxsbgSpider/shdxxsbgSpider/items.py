@@ -9,6 +9,6 @@ import scrapy
 
 
 class ShdxxsbgspiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    name = scrapy.Field()
+    time = scrapy.Field()
+

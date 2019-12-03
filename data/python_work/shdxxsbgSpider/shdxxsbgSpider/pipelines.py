@@ -8,4 +8,12 @@
 
 class ShdxxsbgspiderPipeline(object):
     def process_item(self, item, spider):
+        data = ''
+        with open ('lecture.txt','w',enconding = 'utf-8') as f:
+            names = item['name']
+            times = item['time']
+            for i,j in zip(names,times):
+                data += i + ':' + j +'\n'
+                f.write()
+                f.close()
         return item
